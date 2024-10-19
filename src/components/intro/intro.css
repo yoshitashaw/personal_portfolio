@@ -1,30 +1,40 @@
 .about__container {
     display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+    grid-template-columns: 1fr; /* Ensure single column layout */
+    gap: 2rem; /* Space between the two sections */
 }
 
 .about__me {
     width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
-    display: grid;
+    margin: 0 auto; /* Center the image container */
+    display: flex;
+    justify-content: center;
 }
 
 .about__me-image {
-    border-radius: 2rem;
     overflow: hidden;
     transition: var(--transition);
+    background: transparent;
+}
+
+.about__me-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
 }
 
 .about__me-image:hover {
     transform: scale(1.1);
 }
 
+.about__content {
+    text-align: center; /* Align content in the center */
+}
+
 .about__cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr; /* Stack cards vertically */
     gap: 1.5rem;
 }
 
@@ -63,38 +73,25 @@
     color: var(--color-light);
 }
 
-@media screen and (max-width: 1024px){
-    .about__container {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
+@media screen and (max-width: 1024px) {
     .about__me {
-        width: 50%;
-        margin: 2rem auto 4rem; 
+        width: 70%;
+        margin: 2rem auto; 
     }
-
-    .about__content p {
-        margin: 1rem 0 1.5rem;
-    }
-}
-  
-@media screen and (max-width: 600px){
-    .about__me {
-        width: 65%;
-        margin: 0rem auto 3rem; 
-    }
-
-    .about__cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-
+    
     .about__content {
         text-align: center;
     }
+}
 
-    .about__content p {
-        margin: 1.5rem 0;
+@media screen and (max-width: 600px) {
+    .about__me {
+        width: 80%;
+        margin: 1rem auto; 
+    }
+
+    .about__cards {
+        grid-template-columns: 1fr; /* Ensure cards remain stacked */
+        gap: 1rem;
     }
 }
