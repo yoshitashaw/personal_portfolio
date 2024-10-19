@@ -1,11 +1,9 @@
 import "./portfolio.css";
 
-import IMG1 from "../../assets/Flexcavo.png";
-import IMG2 from "../../assets/Meetnative.png";
-import IMG3 from "../../assets/Mobinspire.png";
-import IMG4 from "../../assets/Raise.png";
-import IMG5 from "../../assets/Potsave.png";
-import IMG6 from "../../assets/Health.png";
+import IMG1 from "../../assets/GENImage.jpg";
+import IMG2 from "../../assets/MyntGram.jpg";
+import IMG3 from "../../assets/FlatApartment.jpg";
+import IMG4 from "../../assets/ExoRealm.jpg";
 import React from "react";
 
 //Portfolio function
@@ -13,57 +11,39 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: "Flexcavo",
+      title: "GENImage",
       img: IMG1,
       description:
-        "It is the website for construction machine renting company (Flexcavo) from Berlin",
-      technologies: "React.js | Pixel-perfect | SCSS | Styled Component",
-      link: "https://www.flexcavo.de/",
+        "GENImage gives your imagination a platform to showcase your creative and artistic mind. Generate images that you wish to create using the Open AI prompt and share them with the community.",
+      technologies: "React.JS | TailWindCSS | OpenAI | DALL-E | Cloudinary | MongoDB | Node.JS | Express.JS",
+      link: "https://github.com/yoshitashaw/GenAIImage",
     },
     {
       id: 2,
-      title: "Meet Native",
+      title: "MyntGram",
       img: IMG2,
       description:
-        "MeetNative is an upselling platform that helps consumers and local businesses get more for their money.",
-      technologies: "React | React Native | Android | iOS",
-      link: "https://meetnative.com/",
+        "The E-commerce site would be no less than a social media interaction that would not only serve the customer’s demands but would also come to aid small-scale businesses to grow and scale up widely.",
+      technologies: "React.JS | Bootstrap | Firebase | Redux | Node.JS | Express.JS",
+      link: "https://myntra-gram.vercel.app/",
     },
     {
       id: 3,
-      title: "Mob Inspire",
+      title: "Flats/Apartment Rental Portal",
       img: IMG3,
       description:
-        "Mob Inspire streamlines the business operations in corporate sector by providing cost-effective and highly productive software solutions.",
+        "Developed a comprehensive rental platform using React for the students living nearby their college for a go to easy accomodation just at your finger-tips.",
       technologies: "Nginx | PHP | MySQL | jQuery",
-      link: "https://www.mobinspire.com/",
+      link: "https://flat-apartment-rent.vercel.app/",
     },
     {
       id: 4,
-      title: "Raise",
+      title: "ExoRealm",
       img: IMG4,
       description:
-        "Get started with free educational courses to mastery the foundations of startup equity as an African business.",
-      technologies: "Remix | React.js | Webflow | jQuery",
-      link: "https://www.raise.africa/",
-    },
-    {
-      id: 5,
-      title: "Potsave",
-      img: IMG5,
-      description:
-        "Through the PotSave.com platform, PotSave offers in-person product assessment and ordering services, accessible via the website, mobile applications, and software.",
-      technologies: "React | Next.js | Lodash | Tailwind CSS",
-      link: "https://dev-pwa.potsave.com/",
-    },
-    {
-      id: 6,
-      title: "Health",
-      img: IMG6,
-      description:
-        "U of U Health is the Mountain West's only academic health care system. We provide patient care, medical research, and physician training.",
-      technologies: "Angular | Drupal | Nginx | TypeScript",
-      link: "https://healthcare.utah.edu/",
+        "ExoRealm is specially curated for space enthusiasts, who are inspired by new exploration and innovation. ExoRealm helps you to explore the exoplanets through a virtual gaming experience.",
+      technologies: " React.js | TailWindCSS | JavaScript | Redux | Unity | ML Model ",
+      link: "https://exo-realm.vercel.app/",
     },
   ];
 
@@ -90,7 +70,7 @@ const Portfolio = () => {
                 className="btn btn-primary"
                 rel="noreferrer"
               >
-                Live Demo
+                Link
               </a>
             </div>
           </article>

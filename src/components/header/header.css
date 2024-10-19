@@ -13,14 +13,14 @@ header {
   }
 }
 
-.header__container h5,
+.header__container h3,
 .header__container h1,
 .header__container .text-light {
   animation: bounce 2s infinite; /* 2 seconds duration, infinite repeats */
 }
 
 /* Optional: Adjust the delay for each element for a staggered effect */
-.header__container h5 {
+.header__container h3 {
   animation-delay: 0.1s; /* No delay for the first element */
 }
 
