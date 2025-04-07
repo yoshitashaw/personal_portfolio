@@ -1,0 +1,113 @@
+header {
+  height: 100%;
+  /* padding-top: 7rem; */
+  padding: 0;
+  overflow: hidden;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust this value to control the bounce height */
+  }
+}
+
+.header__container h3,
+.header__container h1,
+.header__container .text-light {
+  animation: bounce 2s infinite; /* 2 seconds duration, infinite repeats */
+}
+
+/* Optional: Adjust the delay for each element for a staggered effect */
+.header__container h3 {
+  animation-delay: 0.1s; /* No delay for the first element */
+}
+
+.header__container h1 {
+  animation-delay: 0.1s; /* Slight delay for the second element */
+}
+
+.header__container .text-light {
+  animation-delay: 0.1s; /* Further delay for the third element */
+}
+
+
+.header__container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+}
+
+.header__socials {
+  margin-top: 30px; 
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.header__socials::after {
+  content: '';
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+.scroll__down {
+  margin-top: 30px; /* Adjust space below the social media icons */
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px){
+  header {
+    height: 68vh;
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  header {
+    height: 100vh;
+  }
+}
+
+.header__socials a {
+  font-size: 3rem; /* Increase the icon size here */
+  color: #fff; /* Icon color */
+  transition: transform 0.3s ease;
+}
+
+.header__socials a:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header__socials a {
+    font-size: 2.5rem; /* Adjust icon size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .header__socials a {
+    font-size: 2rem; /* Adjust icon size for mobile devices */
+  }
+}
